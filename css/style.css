@@ -4659,6 +4659,11 @@ input[type=file] {
     }
 }
 
+.logo__wrap {
+    width: 95px;
+    display: none;
+}
+
 
 /* @media (max-width:1366px) {
     .home__title--2 {
@@ -5038,7 +5043,7 @@ input[type=file] {
         width: 45px;
     }
     .kategori__item {
-        width: 110px;
+        width: 128px;
         margin: 0px auto;
         margin-bottom: 47px;
     }
@@ -5051,7 +5056,7 @@ input[type=file] {
     }
     .fasilitator__item {
         width: 282px;
-        margin: 0px 17px;
+        margin: 0px auto;
         margin-bottom: 40px;
     }
     .about__obj1 img {
@@ -5069,6 +5074,9 @@ input[type=file] {
     .waktu__item2 h1 {
         font-size: 20px;
         line-height: 26px;
+    }
+    .logo__wrap {
+        display: block;
     }
 }
 
