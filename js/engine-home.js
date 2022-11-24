@@ -92,7 +92,7 @@ tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
 var player, firstScriptTag = document.getElementsByTagName("script")[0];
 
-function onYouTubeIframeAPIReady() { player = new YT.Player("player", { width: "100%", videoId: "WYewiI24j1o", playerVars: { autoplay: 1, playsinline: 1, playlist: "WYewiI24j1o", loop: 1 }, events: { wonReady: onPlayerReady } }) }
+function onYouTubeIframeAPIReady() { player = new YT.Player("player", { width: "100%", videoId: "WYewiI24j1o", playerVars: { autoplay: 1, playsinline: 1, playlist: "WYewiI24j1o", loop: 1 }, events: { onReady: onPlayerReady } }) }
 
 function onPlayerReady(e) { e.target.mute(), e.target.playVideo() }
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
