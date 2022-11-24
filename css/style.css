@@ -5078,6 +5078,9 @@ input[type=file] {
     .logo__wrap {
         display: block;
     }
+    .kategori__title {
+        width: 275px;
+    }
 }
 
 @media (max-width:320px) {
