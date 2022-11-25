@@ -4667,7 +4667,7 @@ input[type=file] {
     margin-bottom: 0;
 }
 
-.hidedesktop {
+.hide-desktop {
     display: none;
 }
 
@@ -4948,10 +4948,10 @@ input[type=file] {
     li.menu-item.current-menu-item {
         padding: 0 75px
     }
-    .hidemobile {
+    .hide-mobile {
         display: none
     }
-    .hidedesktop {
+    .hide-desktop {
         display: block
     }
     .container {

@@ -227,7 +227,7 @@ const mySwiper = new Swiper('.swiper-container', {
         }
     }
 });
-const mySwiper = new Swiper('.try', {
+const mySwiper1 = new Swiper('.try', {
     slidesPerView: 2,
     slidesPerColumn: 2,
     slidesPerGroup: 2,
@@ -247,9 +247,9 @@ const mySwiper = new Swiper('.try', {
                 mySwiper.params.slidesPerColumn = 2;
                 mySwiper.params.slidesPerGroup = 2;
             } else {
-                mySwiper.params.slidesPerView = 3;
+                mySwiper.params.slidesPerView = 2;
                 mySwiper.params.slidesPerColumn = 2;
-                mySwiper.params.slidesPerGroup = 3;
+                mySwiper.params.slidesPerGroup = 2;
             }
             mySwiper.init();
         }
