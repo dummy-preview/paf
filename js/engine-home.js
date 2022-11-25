@@ -92,7 +92,7 @@ tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
 var player, firstScriptTag = document.getElementsByTagName("script")[0];
 
-function onYouTubeIframeAPIReady() { player = new YT.Player("player", { width: "100%", videoId: "WYewiI24j1o", playerVars: { autoplay: 1, playsinline: 1, playlist: "WYewiI24j1o", loop: 1 }, events: { onReady: onPlayerReady } }) }
+function onYouTubeIframeAPIReady() { player = new YT.Player("player", { width: "100%", videoId: "CHYRPWjVQ4I", playerVars: { autoplay: 1, playsinline: 1, playlist: "CHYRPWjVQ4I", loop: 1 }, events: { onReady: onPlayerReady } }) }
 
 function onPlayerReady(e) { e.target.mute(), e.target.playVideo() }
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
@@ -214,7 +214,7 @@ const mySwiper = new Swiper('.swiper-container', {
         orientationchange: function() {},
         beforeResize: function() {
             let vw = window.innerWidth;
-            if (vw < 500) {
+            if (vw > 500) {
                 mySwiper.params.slidesPerView = 2;
                 mySwiper.params.slidesPerColumn = 2;
                 mySwiper.params.slidesPerGroup = 2;
@@ -228,101 +228,31 @@ const mySwiper = new Swiper('.swiper-container', {
     }
 });
 
-// (function($) {
-//     $.fn.countTo = function(options) {
-//         options = options || {};
+// const mySwiper2 = new Swiper('.swiper-container2', {
+//     slidesPerView: 2,
+//     slidesPerColumn: 2,
+//     slidesPerGroup: 2,
+//     spaceBetween: 50,
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true
+//     },
 
-//         return $(this).each(function() {
-
-//             var settings = $.extend({}, $.fn.countTo.defaults, {
-//                     from: $(this).data('from'),
-//                     to: $(this).data('to'),
-//                     speed: $(this).data('speed'),
-//                     refreshInterval: $(this).data('refresh-interval'),
-//                     decimals: $(this).data('decimals')
-//                 },
-//                 options);
-
-
-//             var loops = Math.ceil(settings.speed / settings.refreshInterval),
-//                 increment = (settings.to - settings.from) / loops;
-
-
-//             var self = this,
-//                 $self = $(this),
-//                 loopCount = 0,
-//                 value = settings.from,
-//                 data = $self.data('countTo') || {};
-
-//             $self.data('countTo', data);
-
-
-//             if (data.interval) {
-//                 clearInterval(data.interval);
+//     on: {
+//         init: function() {},
+//         orientationchange: function() {},
+//         beforeResize: function() {
+//             let vw = window.innerWidth;
+//             if (vw > 500) {
+//                 mySwiper.params.slidesPerView = 2;
+//                 mySwiper.params.slidesPerColumn = 2;
+//                 mySwiper.params.slidesPerGroup = 2;
+//             } else {
+//                 mySwiper.params.slidesPerView = 3;
+//                 mySwiper.params.slidesPerColumn = 2;
+//                 mySwiper.params.slidesPerGroup = 3;
 //             }
-//             data.interval = setInterval(updateTimer, settings.refreshInterval);
-
-
-//             render(value);
-
-//             function updateTimer() {
-//                 value += increment;
-//                 loopCount++;
-
-//                 render(value);
-
-//                 if (typeof settings.onUpdate == 'function') {
-//                     settings.onUpdate.call(self, value);
-//                 }
-
-//                 if (loopCount >= loops) {
-
-//                     $self.removeData('countTo');
-//                     clearInterval(data.interval);
-//                     value = settings.to;
-
-//                     if (typeof settings.onComplete == 'function') {
-//                         settings.onComplete.call(self, value);
-//                     }
-//                 }
-//             }
-
-//             function render(value) {
-//                 var formattedValue = settings.formatter.call(self, value, settings);
-//                 $self.text(formattedValue);
-//             }
-//         });
-//     };
-
-//     $.fn.countTo.defaults = {
-//         from: 0,
-//         to: 0, 
-//         speed: 1000, 
-//         refreshInterval: 100, 
-//         decimals: 0, 
-//         formatter: formatter, 
-//         onUpdate: null, 
-//         onComplete: null 
-//     };
-
-//     function formatter(value, settings) {
-//         return value.toFixed(settings.decimals);
-//     }
-// })(jQuery);
-
-// jQuery(function($) {
-
-//     $('.timer').each(count);
-//     $(window).scroll(function() {
-//         console.log($(window).scrollTop());
-//         if ($(window).scrollTop() > 300 && $(window).scrollTop() < 850) {
-//             $('.timer').each(count);
+//             mySwiper.init();
 //         }
-//     });
-
-//     function count(options) {
-//         var $this = $(this);
-//         options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-//         $this.countTo(options);
 //     }
 // });

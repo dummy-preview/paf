@@ -2722,7 +2722,8 @@ ul.timeline>.fisrt:before {
     margin: 0px auto;
 }
 
-.swiper-container {
+.swiper-container,
+.swiper-container2 {
     width: 100%;
     height: auto;
     margin-left: auto;
@@ -5243,6 +5244,9 @@ input[type=file] {
         margin-bottom: -22px;
         color: #C51D23;
         padding-top: 14px;
+    }
+    .kegiatan__hadiah {
+        width: 100%;
     }
 }
 
