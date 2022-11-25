@@ -227,32 +227,31 @@ const mySwiper = new Swiper('.swiper-container', {
         }
     }
 });
+const mySwiper = new Swiper('.try', {
+    slidesPerView: 2,
+    slidesPerColumn: 2,
+    slidesPerGroup: 2,
+    spaceBetween: 50,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
 
-// const mySwiper2 = new Swiper('.swiper-container2', {
-//     slidesPerView: 2,
-//     slidesPerColumn: 2,
-//     slidesPerGroup: 2,
-//     spaceBetween: 50,
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true
-//     },
-
-//     on: {
-//         init: function() {},
-//         orientationchange: function() {},
-//         beforeResize: function() {
-//             let vw = window.innerWidth;
-//             if (vw > 500) {
-//                 mySwiper.params.slidesPerView = 2;
-//                 mySwiper.params.slidesPerColumn = 2;
-//                 mySwiper.params.slidesPerGroup = 2;
-//             } else {
-//                 mySwiper.params.slidesPerView = 3;
-//                 mySwiper.params.slidesPerColumn = 2;
-//                 mySwiper.params.slidesPerGroup = 3;
-//             }
-//             mySwiper.init();
-//         }
-//     }
-// });
+    on: {
+        init: function() {},
+        orientationchange: function() {},
+        beforeResize: function() {
+            let vw = window.innerWidth;
+            if (vw > 500) {
+                mySwiper.params.slidesPerView = 2;
+                mySwiper.params.slidesPerColumn = 2;
+                mySwiper.params.slidesPerGroup = 2;
+            } else {
+                mySwiper.params.slidesPerView = 3;
+                mySwiper.params.slidesPerColumn = 2;
+                mySwiper.params.slidesPerGroup = 3;
+            }
+            mySwiper.init();
+        }
+    }
+});
